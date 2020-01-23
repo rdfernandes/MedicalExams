@@ -8,19 +8,19 @@ Basically it is an application with 3 screens distributed as follows:
 
 ### First screen:
 
-![First Screen](https://github.com/rdfernandes/MedicalExams/blob/master/screen1.png)
+![First Screen](https://raw.githubusercontent.com/rdfernandes/MedicalExams/master/screen1.png)
 
 On this screen, as soon as it opens, a list with all the records obtained in a given call to the Web API is immediately displayed. This record is summarized in this listing.
 
 ### Second screen:
 
-![Second Screen](https://github.com/rdfernandes/MedicalExams/blob/master/screen2.png)
+![Second Screen](https://raw.githubusercontent.com/rdfernandes/MedicalExams/master/screen2.png)
 
 When you click on one of the records obtained on the first screen, this second screen is called where it presents in detail all the information existing in the record that we clicked on the first screen.
 
 ### Third screen:
 
-![Third Screen](https://github.com/rdfernandes/MedicalExams/blob/master/screen3.png)
+![Third Screen](https://raw.githubusercontent.com/rdfernandes/MedicalExams/master/screen3.png)
 
 On the first screen there is a button in the lower right corner, which calls this screen.
 Here is presented a form with REGEX validation in its fields and that after completely filled, the button that allows its sending is activated.
