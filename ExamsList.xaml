@@ -1,0 +1,56 @@
+﻿<Window x:Class="MedicalExams.ExamsList"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:fa="http://schemas.fontawesome.io/icons/"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        Title="{DynamicResource ExamsList.WindowTitle}" Height="450" Width="800">
+
+    <Border Style="{StaticResource GeneralBorder}">
+        <Grid>
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Images/background.jpg"/>
+            </Grid.Background>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition />
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <!-- Title -->
+            <TextBlock Grid.Row="0" Text="{DynamicResource ExamsList.Title}" Style="{StaticResource TitleText}"/>
+            
+            <!-- Exams List -->
+            <ListView x:Name="ExamsListView" Grid.Row="1" Style="{StaticResource ListView}" Width="600">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="150" Header="{DynamicResource ExamsList.ColumnTitle.ProcessNumber}" DisplayMemberBinding="{Binding Id}"/>
+                        <GridViewColumn Width="150" Header="{DynamicResource ExamsList.ColumnTitle.CreatedDate}" DisplayMemberBinding="{Binding CreatedDate, StringFormat='dd/MM/yyyy HH:mm:ss'}"/>
+                        <GridViewColumn Width="200" Header="{DynamicResource ExamsList.ColumnTitle.TotalExamsSelected}" DisplayMemberBinding="{Binding TotalSelectedExams}"/>
+                        <GridViewColumn Width="90" Header=" ">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button x:Name="ExamRowButton" Style="{StaticResource ExamRowButton}" Content="{DynamicResource ExamsList.ButtonMoreInfo}" Click="ExamRowButton_Click" Tag="{Binding Id}"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            
+            <!-- Refresh Button -->
+            <Button Grid.Row="2" Style="{StaticResource CircleButton}" x:Name="RefreshButton" Click="RefreshButton_Click" IsEnabled="True" HorizontalAlignment="Left" Width="40" Height="40">
+                <fa:FontAwesome Icon="Refresh" FontSize="17" Margin="0 4 0 0" />
+            </Button>
+
+            <!-- New Exam Button -->
+            <Button Grid.Row="2" Style="{StaticResource CircleButton}" x:Name="NewExamButton" Click="NewExamButton_Click" Width="40" FontWeight="ExtraBold" FontSize="20" Height="40" Content="+" HorizontalAlignment="Right" />
+
+        </Grid>
+    </Border>
+    
+</Window>

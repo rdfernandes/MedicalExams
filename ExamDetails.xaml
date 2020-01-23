@@ -1,0 +1,69 @@
+﻿<Window x:Class="MedicalExams.ExamDetails"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        Title="{DynamicResource ExamDetails.WindowTitle}" Height="400" Width="400">
+
+    <Border Style="{StaticResource GeneralBorder}">
+
+        <StackPanel>
+            <StackPanel.Background>
+                <ImageBrush ImageSource="Resources/Images/background.jpg" Stretch="UniformToFill" Opacity="0.3" />
+            </StackPanel.Background>
+
+            <Grid>
+                <Border Padding="10">
+                    <StackPanel>
+                        <!-- Process Id -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.ProcessNumber}" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="ProcessIdText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- Created Date -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.CreatedDate}" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="CreatedDateText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- User Number -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.UserNumber}" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="UserNumberText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- User Name -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.UserName}" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="UserNameText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- User DateOfBirth -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.UserDateOfBirth}" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="UserDateOfBirthText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- Total Of Selected Exams -->
+                        <StackPanel Orientation="Horizontal" Margin="0 10">
+                            <TextBlock Text="{DynamicResource ExamDetails.TotalSelectedExams}" Width="120" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="TotalSelectedExamsText" Text="" Margin="10 0 0 0" FontSize="14"/>
+                        </StackPanel>
+
+                        <!-- Selected Exams -->
+                        <StackPanel Margin="0 10">
+                            <TextBlock HorizontalAlignment="Left" Text="{DynamicResource ExamDetails.SelectedExams}" Width="120" FontSize="14" FontWeight="Bold"/>
+                            <TextBlock x:Name="SelectedExamsText" Text="" TextWrapping="Wrap" FontSize="14" />
+                        </StackPanel>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </StackPanel>
+        
+    </Border>
+    
+</Window>

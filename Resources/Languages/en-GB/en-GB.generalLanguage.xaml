@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <!-- ExamsList Window -->
+    <system:String x:Key="ExamsList.WindowTitle">MedicalExams - Exams List</system:String>
+    <system:String x:Key="ExamsList.Title">Exams List</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.ProcessNumber">Process Number</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.CreatedDate">Created Date</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.TotalExamsSelected">Total Exams Selected</system:String>
+    <system:String x:Key="ExamsList.ButtonMoreInfo">+Info</system:String>
+    <!-- ExamDetails Window -->
+    <system:String x:Key="ExamDetails.WindowTitle">MedicalExams - Exam Details</system:String>
+    <system:String x:Key="ExamDetails.ProcessNumber">Process Number:</system:String>
+    <system:String x:Key="ExamDetails.CreatedDate">Created Date:</system:String>
+    <system:String x:Key="ExamDetails.UserNumber">User Number:</system:String>
+    <system:String x:Key="ExamDetails.UserName">Name:</system:String>
+    <system:String x:Key="ExamDetails.UserDateOfBirth">Date Of Birth:</system:String>
+    <system:String x:Key="ExamDetails.TotalSelectedExams">Exams Total:</system:String>
+    <system:String x:Key="ExamDetails.SelectedExams">Exams:</system:String>
+    <!-- InsertNewExam Window -->
+    <system:String x:Key="InsertNewExam.WindowTitle">MedicalExams - Insert New Exam</system:String>
+    <system:String x:Key="InsertNewExam.Title">Insert New Exam</system:String>
+    <system:String x:Key="InsertNewExam.UserNumber">User Number</system:String>
+    <system:String x:Key="InsertNewExam.UserName">Name</system:String>
+    <system:String x:Key="InsertNewExam.UserDateOfBirth">Date Of Birth</system:String>
+    <system:String x:Key="InsertNewExam.ExamsLabel">Exams</system:String>
+    <system:String x:Key="InsertNewExam.TotalSelectedExams">selected</system:String>
+    <system:String x:Key="InsertNewExam.DatepickerText">Select a date</system:String>
+    <!-- ERRORS -->
+    <system:String x:Key="Error.WebAPINotFoundTitle">Web API: Connection Problem</system:String>
+    <system:String x:Key="Error.WebAPINotFoundText">Web API Not Found. Please validate URL on your settings file.</system:String>
+    <!-- MESSAGES -->
+    <system:String x:Key="Message.ProcessAddedTitle">Process Registered</system:String>
+    <system:String x:Key="Message.ProcessAddedText">The process have been inserted with success!</system:String>
+</ResourceDictionary>

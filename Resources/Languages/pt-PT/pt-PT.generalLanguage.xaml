@@ -1,0 +1,33 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:system="clr-namespace:System;assembly=System.Runtime">
+    <!-- ExamsList Window -->
+    <system:String x:Key="ExamsList.WindowTitle">MedicalExams - Lista de Exames</system:String>
+    <system:String x:Key="ExamsList.Title">Lista de Exames</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.ProcessNumber">Núm. de Processo</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.CreatedDate">Data de Criação</system:String>
+    <system:String x:Key="ExamsList.ColumnTitle.TotalExamsSelected">Total de Exames Seleccionados</system:String>
+    <system:String x:Key="ExamsList.ButtonMoreInfo">+Info</system:String>
+    <!-- ExamDetails Window -->
+    <system:String x:Key="ExamDetails.WindowTitle">MedicalExams - Detalhes do Exame</system:String>
+    <system:String x:Key="ExamDetails.ProcessNumber">Nr. do Processo:</system:String>
+    <system:String x:Key="ExamDetails.CreatedDate">Data de Criação:</system:String>
+    <system:String x:Key="ExamDetails.UserNumber">Nr. de Utente:</system:String>
+    <system:String x:Key="ExamDetails.UserName">Nome:</system:String>
+    <system:String x:Key="ExamDetails.UserDateOfBirth">Data de Nascimento:</system:String>
+    <system:String x:Key="ExamDetails.TotalSelectedExams">Total de Exames:</system:String>
+    <system:String x:Key="ExamDetails.SelectedExams">Exames</system:String>
+    <!-- InsertNewExam Window -->
+    <system:String x:Key="InsertNewExam.WindowTitle">MedicalExams - Inserir Novo Exame</system:String>
+    <system:String x:Key="InsertNewExam.Title">Inserir Novo Exame</system:String>
+    <system:String x:Key="InsertNewExam.UserNumber">Núm. de Utente</system:String>
+    <system:String x:Key="InsertNewExam.UserName">Nome</system:String>
+    <system:String x:Key="InsertNewExam.UserDateOfBirth">Data de Nascimento</system:String>
+    <system:String x:Key="InsertNewExam.ExamsLabel">Exames</system:String>
+    <system:String x:Key="InsertNewExam.TotalSelectedExams">seleccionado(s)</system:String>
+    <system:String x:Key="InsertNewExam.DatepickerText">Seleccione uma data</system:String>
+    <!-- ERRORS -->
+    <system:String x:Key="Error.WebAPINotFoundTitle">Web API: Problema de Conexão</system:String>
+    <system:String x:Key="Error.WebAPINotFoundText">Web API Indisponível. Por favor, valide o URL no seu ficheiro settings.</system:String>
+    <!-- MESSAGES -->
+    <system:String x:Key="Message.ProcessAddedTitle">Processo Registado</system:String>
+    <system:String x:Key="Message.ProcessAddedText">O processo foi inserido com sucesso!</system:String>
+</ResourceDictionary>
