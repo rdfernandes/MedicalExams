@@ -2,7 +2,9 @@
 
 ### This application was developed in WPF APP .NetCore 3.0.
 
-This project serves as a demonstration of a multilanguage application that obtains its data from an ASP.NET Core 3 Web API.
+This project serves as a demonstration of a multilanguage application that obtains its data from an ASP.NET Core 3 Web API that can be seen at this link:
+https://github.com/rdfernandes/MedicalExamsWebAPI
+
 
 Basically it is an application with 3 screens distributed as follows:
 
